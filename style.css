@@ -110,15 +110,26 @@ ins{
   color: grey;
   font-weight: bold;
 }
-input[type=text],
-input[type=email],
+
+
 input[type=password]:focus {
 	outline: none;
   	border: 2px solid silver;
   	
 }
+input[type=text]:focus{
+    outline: none;
+  	border: 2px solid silver;
+}
+input[type=email]:focus{
+    outline: none;
+  	border: 2px solid silver;
+}
+
 .in{
 	color: #ddd;
+
+	
 }
 @media screen and (min-width: 800px) and (max-width: 1100px) {
 
@@ -204,13 +215,13 @@ header{
 h1{
 	
 	font-size: 17px;
-	margin-left: 20px;
+	margin-left: 60px;
 	line-height: 20px;
 
  }
  p{
  	font-size:12px;
- 	padding-left: 20px;
+ margin-left: 60px;
  	line-height: 18px;
  	margin-bottom: 40px;
  }
@@ -219,7 +230,7 @@ input[type=email],
 input[type=password],
 input[type=submit]{
 
-	width: 200px;
+	width: 280px;
 }
 input[type=text],
 input[type=email],
@@ -230,16 +241,16 @@ input[type=password]{
 
 
 .first{
-	width: 230px;
+	width: 310px;
 	padding: 24px;
 	line-height: 17px;
 	word-spacing: 2px;
 }
 input[type=submit]{
-	width: 230px
+	width: 310px
 }
 .box{
-	width: 280px;
+	width: 360px;
 	margin: auto;
 	margin-bottom: 4rem;
 }
