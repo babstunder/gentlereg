@@ -10,12 +10,27 @@ body{
 font-family: 'Poppins', sans-serif;
 
 }
+Error{
+	display: none;
+}
+D:focuswithin:required:invalid ~ .error{
+	display: block;
+}
 
 .container{
 	display: flex;
 	justify-content: center;
 	margin-top: 40px;
 	font-family: 'Poppins', sans-serif;
+}
+#verip,#verif,#veril,#verie{
+	color: hsl(0, 100%, 74%);
+	font-size: 12px;
+  text-align: right;
+	margin-bottom: 12px;
+	font-weight: bold;
+	font-style: italic;
+
 }
 header{
 	align-self: center;
@@ -76,8 +91,11 @@ input[type=password]{
 	padding-top: 17px;
 	padding-bottom: 17px;
 	border-radius: 5px;
-	margin-bottom: 13px;
+	margin-bottom: 8px;
 
+}
+input[type=password]{
+	margin-bottom: 8px;
 }
 input[type=submit]{
 
@@ -259,4 +277,43 @@ input[type=submit]{
 	word-spacing: 1px;
 	line-height: 17px;
 }
+}
+@media screen and (max-width: 375px){
+ input[type=text],
+input[type=email],
+input[type=password],
+input[type=submit]{
+
+	width: 220px;
+}
+input[type=text],
+input[type=email],
+input[type=password]{
+	padding-right: 10px;
+}
+
+
+
+.first{
+	width: 250px;
+	padding: 24px;
+	line-height: 17px;
+	word-spacing: 2px;
+}
+input[type=submit]{
+	width: 250px
+}
+
+
+.box{
+	width: 300px;
+	margin: auto;
+	margin-bottom: 4rem;
+}
+.last{
+	font-size: 12px;
+	word-spacing: 1px;
+	line-height: 17px;
+}
+
 }
