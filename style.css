@@ -22,6 +22,9 @@ font-family: 'Poppins', sans-serif;
   	font-size: 12px;
   	font-style: italic;
  }
+  .input:valid:focus ~ .error-message{
+    display: none;
+  }
    .error-message{
  	display: none;
  	margin-bottom: 10px;
