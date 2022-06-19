@@ -19,17 +19,21 @@
   	</header>
   	<div class="box">
   		<div class="first">Try it free7days <ins class="in">then $20/mo,thereafter</ins></div>
-  		<form>
+  		<form >
   		<div class="input-box">
-  			<input  placeholder="First Name" type="text" name="text" required ="required"><br>
-  			<p class="errorDisplayer"></p>
-  			<input  placeholder="Last Name" type="text" name="text" required ="required"><br>
-  			<p class="errorDisplayer"></p>
-  			<input  placeholder="Email Address" type="email" name="email"required ="required" ><br>
-  			<p id="errorDisplayer"></p>
-  			<input  placeholder="Password" type="password" name="text" required ="required" id="password"><br>
-  			<p id="verip"></p>
-  			<input type="submit" name=" submit" value="CLAIM YOUR FREE TRIAL" id="sup">
+  			<div class="input-container" data-error ="this cant be empty">
+  			<input  placeholder="First Name" type="text" name="text"  class="input" required><div class="error-message"> First Name cannot be empty</div>
+  		</div>
+  			<div class="input-container" data-error ="this cant be empty">
+  			<input  placeholder="Last Name" type="text" name="text"  class="input" required><div class="error-message"> Last Name cannot be empty</div>
+  		</div>
+  		
+  			<div class="input-container" data-error ="this cant be empty">
+  			<input  placeholder="email@example/com" type="email" name="email" class="input"required value=""><div class="error-message"> Looks like this is not an email</div></div >
+  			<div class="input-container" data-error ="this cant be empty">
+  			<input  placeholder="Password" type="password" name="text"  class="input" required ><div class="error-message"> Password cannot be empty</div>
+  			</div>
+  			<input type="submit" name=" submit" value="CLAIM YOUR FREE TRIAL" id="sup" >
   			<div class="last">By clicking the button, u are agreeing to our <ins>Terms and Services</ins></div>
 
   		</div>
@@ -40,7 +44,7 @@
 
 
   </div>
-  <script type="text/javascript" src="sign-in.js"></script>
+
 
 </body>
 </html>
